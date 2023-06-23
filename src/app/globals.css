@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 230, 230, 230;
+  --background-rgb: 15, 30, 15;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 222, 128);
+  border: 2px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tazz {
+  -webkit-text-stroke: 5px transparent;
+  background: linear-gradient(rgba(74, 222, 128, 0.7), rgba(74, 222, 128, 1));
+  -webkit-background-clip: text;
+  color: rgb(var(--background-rgb));
+  font-size: calc(30px + 18vw);
+  font-weight: 700;
+  letter-spacing: calc(2px + 0.4vw);
+  opacity: 1;
+  text-transform: uppercase;
+}
