@@ -9,6 +9,8 @@ import {
 } from "wagmi";
 import { contracts } from "../statics/contract";
 
+// This is a custom hook that demonstrates how to update data on chain
+// The example calls the swapExactTokensForTokens of Pancake V3 router, allowing you to swap TokenIn for TokenOut. 
 export default function useSwap(
   amountIn: BigInt,
   tokenIn: string,

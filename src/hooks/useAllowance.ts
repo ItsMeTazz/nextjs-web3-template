@@ -2,6 +2,7 @@ import { Address, useAccount, useContractRead } from "wagmi";
 import { contracts } from "../statics/contract";
 import { parseEther } from "viem";
 
+// Custom hook fetching the allowance of your WBNB to Pancake v3 router
 export default function useAllowance() {
   const { address } = useAccount();
 

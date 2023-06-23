@@ -6,9 +6,8 @@ import {
 } from "wagmi";
 import { contracts } from "../statics/contract";
 
+// Custom hook allowing you to approve the spending of a token on Pancake v3 router
 export default function useApprove(amountIn: bigint | undefined) {
-  console.log("amountIn", amountIn);
-
   const preparation = usePrepareContractWrite({
     address: contracts[56].wbnb.address as Address,
     abi: contracts[56].wbnb.abi,
