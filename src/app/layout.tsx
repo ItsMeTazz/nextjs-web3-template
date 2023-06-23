@@ -1,7 +1,7 @@
 import "./globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
 import { Chakra_Petch } from "next/font/google";
-import { Providers } from "./provider";
+import { Providers } from "../components/Providers";
 import { Analytics } from "@vercel/analytics/react";
 import { Suspense } from "react";
 import LoadingScreen from "../components/LoadingScreen";
